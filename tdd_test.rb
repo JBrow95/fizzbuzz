@@ -30,5 +30,12 @@ class TestTddFizz < Minitest::Test
     def fiveteen_element_returns_minedminds()
     	assert_equal(["minedminds"], fizzbuzz()[14])
     end
+
+    def every_third_element_equals_mined()
+    	assert_equal(["mined"],fizzbuzz()[2])
+    	assert_equal(["mined"],fizzbuzz()[5])
+    	assert_equal(["mined"],fizzbuzz()[8])
+    end
+
 end
 
