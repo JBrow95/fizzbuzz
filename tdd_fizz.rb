@@ -1,7 +1,10 @@
 def fizzbuzz()
-	arr = [*1..100]
-	arr[2] = "mined"
-	arr[4] = "minds"
-	arr[14] = "minedminds"
+	arr = [*1..100].each do |n|
+		if n %3 == 0
+			n = "mined"
+		elsif n %5 == 0
+			n = "minds"
+		end
+	end
 	arr
 end
