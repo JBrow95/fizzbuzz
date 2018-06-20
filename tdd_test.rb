@@ -18,5 +18,9 @@ class TestTddFizz < Minitest::Test
     def first_element_in_array_is_1()
     	assert_equal([0], fizzbuzz())
     end
+
+    def third_element_returns_mined()
+    	assert_equal([mined], fizzbuzz()[2])
+    end
 end
 
