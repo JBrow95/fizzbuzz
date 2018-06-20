@@ -20,7 +20,11 @@ class TestTddFizz < Minitest::Test
     end
 
     def third_element_returns_mined()
-    	assert_equal([mined], fizzbuzz()[2])
+    	assert_equal(['mined'], fizzbuzz()[2])
+    end
+
+    def five_elemt_returns_minds()
+    	assert_equal(["minds"], fizzbuzz()[4])
     end
 end
 
