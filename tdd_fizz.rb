@@ -1,8 +1,6 @@
-fizz_arr = [*1..100]
-
-def fizzbuzz(fizz_arr)
+def fizzbuzz()
 	new_arr = []
-	fizz_arr.each do |n|
+	1.upto(100).each do |n|
 		if n %3 == 0 && n %5 == 0
 			n = "minedminds"
 		elsif n %3 == 0
@@ -12,5 +10,6 @@ def fizzbuzz(fizz_arr)
 		end
 		new_arr << n
 	end
-	fizz_arr = new_arr
+	new_arr
 end
+
