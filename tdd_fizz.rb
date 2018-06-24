@@ -1,5 +1,5 @@
 def fizzbuzz()
-	new_arr = []
+	empty = []
 	1.upto(100).each do |n|
 		if n %3 == 0 && n %5 == 0
 			n = "minedminds"
@@ -8,8 +8,8 @@ def fizzbuzz()
 		elsif n %5 == 0
 			n = "minds"
 		end
-		new_arr << n
+		empty << n
 	end
-	new_arr
+	empty
 end
 
