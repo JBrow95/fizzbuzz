@@ -1,3 +1,5 @@
+fizz_arr = [*1..100]
+
 def fizzbuzz(fizz_arr)
 	new_arr = []
 	fizz_arr.each do |n|
@@ -10,5 +12,5 @@ def fizzbuzz(fizz_arr)
 		end
 		new_arr << n
 	end
-	new_arr
+	fizz_arr = new_arr
 end
